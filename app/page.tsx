@@ -16,7 +16,10 @@ export default function LandingPage() {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      const { clientX, clientY, innerWidth, innerHeight } = window
+      // CORRECTION ICI : On ne prend que la taille de la fenêtre depuis 'window'
+      const { innerWidth, innerHeight } = window
+      
+      // On utilise 'e.clientX' pour la position de la souris
       const x = (e.clientX / innerWidth) - 0.5
       const y = (e.clientY / innerHeight) - 0.5
       
@@ -96,7 +99,6 @@ export default function LandingPage() {
                 className="relative z-20 mt-8 md:mt-0"
             >
                 {/* Cadre DORÉ moderne avec ombre portée douce */}
-                {/* Changement ici : bg-white remplacé par une couleur or hexadécimale */}
                 <div className="relative w-[70vw] md:w-[320px] shadow-2xl transition-shadow duration-500 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)] bg-[#d4af37] p-3">
                      <img
                         src="/tableau-landing-page.jpg"
@@ -105,8 +107,6 @@ export default function LandingPage() {
                         height={500}
                         className="w-full h-auto object-cover"
                     />
-                    
-                    {/* L'étiquette "Édition N°1" a été supprimée ici */}
                 </div>
             </motion.div>
 
