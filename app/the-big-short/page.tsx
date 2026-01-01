@@ -435,7 +435,7 @@ export default function BigShortPage() {
                         <strong>Le chaos était volontaire.</strong> Le film démontre que la complexité financière n'est pas accidentelle, c'est une arme. Elle sert d'écran de fumée pour que personne — ni les clients, ni les régulateurs, ni même les PDG — ne regarde sous le capot.
                     </p>
                     <div className="border-l-2 border-red-500 pl-4 bg-white/5 p-4 rounded-r-lg">
-                        <strong className="text-white block mb-2">La leçon finale :</strong>
+                        <strong className="text-white block mb-2">La leçon finale (et terrifiante) :</strong>
                         <p className="text-base text-gray-400">
                             Quelques années après la crise, les banques ont relancé les CDO. Elles les ont simplement renommés <em>"Bespoke Tranche Opportunities"</em>.
                         </p>
@@ -446,6 +446,23 @@ export default function BigShortPage() {
                 </motion.div>
             </div>
         </div>
+      </section>
+
+      <div className="bg-[#1a1a1a] py-16 text-center text-white/40 border-t border-white/10">
+        <p className="font-serif text-sm font-light italic">Fin du dossier N°01 — SUBTEXT</p>
+      </div>
+      {/* ... (le reste du code précédent) ... */}
+
+      {/* LIEN VERS LE DRESSING - À AJOUTER */}
+      <section className="relative z-10 bg-[#F9F9F7] py-24 text-center">
+        <Link href="/the-big-short/dressing" className="group relative inline-flex flex-col items-center justify-center overflow-hidden rounded-full border-2 border-pink-300 bg-pink-50 px-12 py-6 transition-all duration-500 hover:bg-pink-100 hover:scale-105">
+           <span className="font-serif text-2xl italic text-pink-900 group-hover:text-pink-600">
+              Bonus : Le Dressing
+           </span>
+           <span className="mt-2 text-[10px] uppercase tracking-[0.2em] text-pink-700/60">
+              Makeover Edition
+           </span>
+        </Link>
       </section>
 
       <div className="bg-[#1a1a1a] py-16 text-center text-white/40 border-t border-white/10">
