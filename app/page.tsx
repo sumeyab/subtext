@@ -110,7 +110,7 @@ export default function LandingPage() {
         <section className="border-t border-black pt-12">
             <div className="flex items-end justify-between mb-12">
                 <h2 className="font-mono text-xs font-bold uppercase tracking-widest font-sans">Dossiers Disponibles</h2>
-                <span className="font-mono text-xs font-sans">02 / ∞</span>
+                <span className="font-mono text-xs font-sans">03 / ∞</span>
             </div>
 
             {/* DOSSIER 01: THE BIG SHORT */}
@@ -147,12 +147,11 @@ export default function LandingPage() {
                 </Link>
             </div>
 
-            {/* DOSSIER 02: ROCKY (NOUVEAU) */}
+            {/* DOSSIER 02: ROCKY */}
             <div className="group">
                 <Link href="/rocky-1" className="block">
                     <div className="relative flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-black/10 transition-all duration-500 group-hover:border-black group-hover:pl-4 overflow-visible">
                         
-                        {/* Image au survol (Ajoute affiche-rocky.jpg dans public !) */}
                         <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-auto z-30 opacity-0 scale-90 -rotate-2 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-out pointer-events-none drop-shadow-2xl">
                              <Image 
                                 src="/affiche-rocky.jpg" 
@@ -171,6 +170,40 @@ export default function LandingPage() {
                         <div className="relative z-20 md:absolute md:left-1/2 md:-translate-x-1/2">
                             <h3 className="font-serif text-4xl md:text-6xl italic text-gray-400 transition-colors duration-300 group-hover:text-black mix-blend-darken">
                                 Rocky
+                            </h3>
+                        </div>
+
+                        <div className="relative z-20 mt-4 md:mt-0 flex items-center gap-2 opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 font-sans">
+                            <span className="text-xs font-bold uppercase tracking-widest">Lire l'analyse</span>
+                            <ArrowRight size={16} />
+                        </div>
+                    </div>
+                </Link>
+            </div>
+
+            {/* DOSSIER 03: KIKI (NOUVEAU) */}
+            <div className="group">
+                <Link href="/kiki" className="block">
+                    <div className="relative flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-black/10 transition-all duration-500 group-hover:border-black group-hover:pl-4 overflow-visible">
+                        
+                        <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-auto z-30 opacity-0 scale-90 rotate-1 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-out pointer-events-none drop-shadow-2xl">
+                             <Image 
+                                src="/affiche-kiki.jpg" 
+                                alt="Affiche Kiki la petite sorcière" 
+                                width={300} 
+                                height={450}
+                                className="object-cover rounded-sm shadow-xl"
+                             />
+                        </div>
+
+                        <div className="relative z-20 mb-4 md:mb-0 flex gap-4 md:gap-12 font-mono text-xs uppercase tracking-widest opacity-50 group-hover:opacity-100 transition-opacity mix-blend-multiply font-sans">
+                            <span>No. 003</span>
+                            <span>Ghibli / Burnout</span>
+                        </div>
+
+                        <div className="relative z-20 md:absolute md:left-1/2 md:-translate-x-1/2">
+                            <h3 className="font-serif text-4xl md:text-6xl italic text-gray-400 transition-colors duration-300 group-hover:text-black mix-blend-darken">
+                                Kiki's Delivery Service
                             </h3>
                         </div>
 
